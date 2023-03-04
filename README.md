@@ -1,5 +1,5 @@
 # GarZen
-HackCU Submission 
+HackCU Submission  
 **Team Members:** Cheng Zhou, Jason Chung, Matthew Kachensky
 
 # Requirements
