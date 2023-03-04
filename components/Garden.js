@@ -1,5 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View,TouchableOpacity } from 'react-native';
+import Plant from './Plant'
+import Menu from './Menu'
 
 const styles = StyleSheet.create({
     board: {
@@ -30,6 +32,7 @@ class Garden extends React.Component {
       return (
         <TouchableOpacity style={styles.square} onPress={() => this.props.onPress(i)}>
           <Plant plantType = {Component} />
+          
         </TouchableOpacity>
       );
     }
