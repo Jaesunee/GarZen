@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { View } from 'react-native';
 
-const plantTypes = { tomato :  };
+
 
 
 const styles = StyleSheet.create({
@@ -13,14 +13,21 @@ const styles = StyleSheet.create({
         height: 50,
     },
 });
+
 class Plant extends Component {
-
-
-
+    constructor(plantType) {
+        this.plantType = plantType;
+    }
+    
     render() {
-        <View style = {styles.image}>
+
+        return <View style = {styles.image}>
+            <Text>{this.plantType}</Text>
             <Image style = {styles.image}
-            source={require('../pictures/' + )}/>
-        </View>
+            source={require('../pictures/' + this.plantType + '.png')}/>
+        </View>;
     }
 };
+
+
+export default Plant;

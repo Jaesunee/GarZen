@@ -13,7 +13,8 @@ import TabBar from './components/Taskbar.js'
 export default function App() {
   return (
     <View style={styles.container}>
-      <Garden component={Test} />
+      {/* <Garden component={Test} /> */}
+      <Plant plantType='tomato'/>
     </View>
   );
 }
