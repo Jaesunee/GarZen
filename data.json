@@ -1,0 +1,27 @@
+{
+    "dirt" : {
+        "value": -1,
+        "type" : "dirt",
+        "time" : 0
+    },
+
+    "tomato" : {
+        "value": 0,
+        "type" : "tomato",
+        "time" : 3
+
+
+    },
+
+    "potato": {
+        "value": 1,
+        "type" : "potato",
+        "time" : 5
+    },
+
+    "radish": {
+        "value": 2,
+        "type" : "radish",
+        "time" : 7
+    }
+}

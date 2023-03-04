@@ -15,33 +15,35 @@ const styles = StyleSheet.create({
 });
 
 class Plant extends React.Component {
-    // constructor(plantType) {
-    //     this.plantType = plantType;
-    // }
+    constructor(props) {
+        super(props);
+        this.state = {
+            plant : require('../pictures/dirt.png'),
+        }
+    }
     
     render() {
 
-        var plantType = this.props.plantType;
-        switch(this.props.plantType){
-            case 'tomato':
-                var plantType = require('../pictures/tomato.png');
-                break;
-            case 'radish':
-                var plantType = require('../pictures/radish.png');
-                break;
-            case 'potato':
-                var plantType = require('../pictures/potato.png');
-                break;
-            default:
-                var plantType = require('../pictures/tomato.png');
-                break;
-        }
+        // var plantType = this.props.plantType;
+        // switch(this.props.plantType){
+        //     case 'tomato':
+        //         var plantType = require('../pictures/tomato.png');
+        //         break;
+        //     case 'radish':
+        //         var plantType = require('../pictures/radish.png');
+        //         break;
+        //     case 'potato':
+        //         var plantType = require('../pictures/potato.png');
+        //         break;
+        //     default:
+        //         var plantType = require('../pictures/tomato.png');
+        //         break;
+        // }
 
         return (<View style = {styles.container}>
-            <Text>{this.plantType}</Text>
             <View>
                 <Image style = {styles.image}
-                source={plantType}/>
+                source={this.state.plant}/>
             </View>
         </View>
         );
