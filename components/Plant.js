@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { View } from 'react-native';
+import { View, StyleSheet, Text, Image } from 'react-native';
 
 
 
@@ -14,18 +14,37 @@ const styles = StyleSheet.create({
     },
 });
 
-class Plant extends Component {
-    constructor(plantType) {
-        this.plantType = plantType;
-    }
+class Plant extends React.Component {
+    // constructor(plantType) {
+    //     this.plantType = plantType;
+    // }
     
     render() {
 
-        return <View style = {styles.image}>
+        var plantType = this.props.plantType;
+        switch(this.props.plantType){
+            case 'tomato':
+                var plantType = require('../pictures/tomato.png');
+                break;
+            case 'radish':
+                var plantType = require('../pictures/radish.png');
+                break;
+            case 'potato':
+                var plantType = require('../pictures/potato.png');
+                break;
+            default:
+                var plantType = require('../pictures/tomato.png');
+                break;
+        }
+
+        return (<View style = {styles.container}>
             <Text>{this.plantType}</Text>
-            <Image style = {styles.image}
-            source={require('../pictures/' + this.plantType + '.png')}/>
-        </View>;
+            <View>
+                <Image style = {styles.image}
+                source={plantType}/>
+            </View>
+        </View>
+        );
     }
 };
 
