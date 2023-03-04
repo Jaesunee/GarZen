@@ -1,3 +1,13 @@
+import {
+    StyleSheet,
+    Button,
+    View,
+    SafeAreaView,
+    Text,
+    Alert,
+  } from 'react-native';  
+
+
 const ProfileScreen = ({navigation}) => {
     return (
       <Button

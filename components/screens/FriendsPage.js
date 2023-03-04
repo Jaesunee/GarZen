@@ -1,3 +1,13 @@
+import {
+    StyleSheet,
+    Button,
+    View,
+    SafeAreaView,
+    Text,
+    Alert,
+  } from 'react-native';  
+
+
 const FriendsScreen = ({navigation}) => {
     return (
       <Button
