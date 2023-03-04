@@ -15,7 +15,7 @@ const HomeScreen = ({navigation}) => {
     return (
         <View style={styles.center}>
             <Text> Plant some shit </Text>
-            <Garden component={Test} />
+            <Garden component="tomato" />
         </View>
     );
 };

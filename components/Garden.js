@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         borderWidth: 1,
         borderColor: '#333',
-        margin: 20,
+        margin: 0,
     },
     square: {
         width: 100,
@@ -26,10 +26,10 @@ const styles = StyleSheet.create({
 
 class Garden extends React.Component {
     renderSquare(i) {
-      const Component = this.props.component;
+      const Component = this.props.plantType;
       return (
         <TouchableOpacity style={styles.square} onPress={() => this.props.onPress(i)}>
-          <Component />
+          <Plant plantType = {Component} />
         </TouchableOpacity>
       );
     }
