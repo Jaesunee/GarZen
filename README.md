@@ -7,7 +7,7 @@ HackCU Submission
 - Latest version of Expo
 
 # Instructions to run
-- npm install
-- npx expo start
+- Run `npm install`
+- Run `npx expo start`
 - scan QR code
 - Enjoy!
